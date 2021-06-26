@@ -197,7 +197,7 @@
                               <input type="text" id="todo-input-text" name="todo-input-text" class="form-control" placeholder="Thêm công việc">
                             </div>
                             <div class="col-3 todo-send">
-                              <button class="btn-info btn-block btn" type="button" id="todo-btn-submit">Add</button>
+                              <button class="btn-info btn-block btn" type="button" id="todo-btn-submit">Thêm</button>
                             </div>
                           </div>
                       </div>
