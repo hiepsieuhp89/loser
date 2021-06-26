@@ -9,7 +9,7 @@
         for (var e = 0; e < this.$todoData.length; e++) this.$todoData[e].id == t && (this.$todoData[e].done = o)
     }, o.prototype.addTodo = function(t) {
         this.$todoData.push({
-            id: this.$todoData.length,
+            id: '' + moment(),
             text: t,
             done: !1
         }), this.generate()
