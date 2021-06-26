@@ -63,60 +63,6 @@
             </div>
             <!-- end page title -->
             <div class="row">
-              <div class="col-xl-3 col-sm-6">
-                <div class="card bg-pink">
-                  <div class="card-body widget-style-2">
-                    <div class="text-white media">
-                      <div class="media-body align-self-center">
-                        <h2 class="my-0 text-white"><span data-plugin="counterup">{{ $statistic->visits_count }}</span></h2>
-                        <p class="mb-0">Số người chuy cập</p>
-                      </div>
-                      <i class="ion-md-eye"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6">
-                <div class="card bg-purple">
-                  <div class="card-body widget-style-2">
-                    <div class="text-white media">
-                      <div class="media-body align-self-center">
-                        <h2 class="my-0 text-white"><span data-plugin="counterup">{{ $statistic->generating_number_count }}</span></h2>
-                        <p class="mb-0">Số lần tạo số Random</p>
-                      </div>
-                      <i class="ion-md-paper-plane"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6">
-                <div class="card bg-info">
-                  <div class="card-body widget-style-2">
-                    <div class="text-white media">
-                      <div class="media-body align-self-center">
-                        <h2 class="my-0 text-white"><span data-plugin="counterup">{{ $statistic->docs_count }}</span></h2>
-                        <p class="mb-0">Số lượng văn mẫu</p>
-                      </div>
-                      <i class="ion-ios-pricetag"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6">
-                <div class="card bg-primary">
-                  <div class="card-body widget-style-2">
-                    <div class="text-white media">
-                      <div class="media-body align-self-center">
-                        <h2 class="my-0 text-white"><span data-plugin="counterup">{{ $statistic->messages_sent_count }}</span></h2>
-                        <p class="mb-0">Số lượng tin nhắn đã gửi</p>
-                      </div>
-                      <i class="mdi mdi-comment-multiple"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
               <div class="col-xl-5">
                 <div class="card">
                   <div class="card-header py-3 bg-transparent">
@@ -336,6 +282,61 @@
               </div>
               <!-- end col -->
                 {{-- End van mau section --}}
+            </div>
+            <!-- End row -->
+            <div class="row">
+              <div class="col-xl-3 col-sm-6">
+                <div class="card bg-pink">
+                  <div class="card-body widget-style-2">
+                    <div class="text-white media">
+                      <div class="media-body align-self-center">
+                        <h2 class="my-0 text-white"><span data-plugin="counterup">{{ $statistic->visits_count }}</span></h2>
+                        <p class="mb-0">Số người chuy cập</p>
+                      </div>
+                      <i class="ion-md-eye"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6">
+                <div class="card bg-purple">
+                  <div class="card-body widget-style-2">
+                    <div class="text-white media">
+                      <div class="media-body align-self-center">
+                        <h2 class="my-0 text-white"><span data-plugin="counterup">{{ $statistic->generating_number_count }}</span></h2>
+                        <p class="mb-0">Số lần tạo số Random</p>
+                      </div>
+                      <i class="ion-md-paper-plane"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6">
+                <div class="card bg-info">
+                  <div class="card-body widget-style-2">
+                    <div class="text-white media">
+                      <div class="media-body align-self-center">
+                        <h2 class="my-0 text-white"><span data-plugin="counterup">{{ $statistic->docs_count }}</span></h2>
+                        <p class="mb-0">Số lượng văn mẫu</p>
+                      </div>
+                      <i class="ion-ios-pricetag"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6">
+                <div class="card bg-primary">
+                  <div class="card-body widget-style-2">
+                    <div class="text-white media">
+                      <div class="media-body align-self-center">
+                        <h2 class="my-0 text-white"><span data-plugin="counterup">{{ $statistic->messages_sent_count }}</span></h2>
+                        <p class="mb-0">Số lượng tin nhắn đã gửi</p>
+                      </div>
+                      <i class="mdi mdi-comment-multiple"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- End row -->
           </div>
