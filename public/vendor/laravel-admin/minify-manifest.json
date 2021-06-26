@@ -1,0 +1,13 @@
+{
+    "css": [
+        "vendor/laravel-admin/laravel-admin.min.css?id=07cc3701bba99d2229c5a688883452c5",
+        "https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css",
+        "https://cdn.jsdelivr.net/npm/shortcut-buttons-flatpickr@0.3.0/dist/themes/light.min.css"
+    ],
+    "js": [
+        "vendor/laravel-admin/laravel-admin.min.js?id=d1f3d05c925070ef6db5d2b47fbc97ea",
+        "https://cdn.jsdelivr.net/npm/flatpickr",
+        "https://cdn.jsdelivr.net/npm/shortcut-buttons-flatpickr@0.1.0/dist/shortcut-buttons-flatpickr.min.js",
+        "https://npmcdn.com/flatpickr@4.6.6/dist/l10n/zh.js"
+    ]
+}
