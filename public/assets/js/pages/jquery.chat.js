@@ -11,17 +11,19 @@
     channel.bind('send-message', function(data) {
         //gửi
         if (my_id == data.from) {
-
-            $('i[refer="' + data.id + '"]').html('');
+            if ($('i[refer="' + data.id + '"]').length != 0)
+                $('i[refer="' + data.id + '"]').html('');
+            else {
+                s('<li class="clearfix odd"><div class="chat-avatar"><img src="assets/images/users/avatar-1.jpg" alt="male"><i refer="' + data.id + '"></i></div><div class="conversation-text"><div class="ctext-wrap"><i>Bạn (' + my_id + ')</i><p>' + data.message + "</p></div></div></li>").appendTo(".conversation-list");
+            }
 
         } else { //nhận
 
             s('<li class="clearfix"><div class="chat-avatar"><img src="assets/images/users/avatar-1.jpg" alt="male"><i></i></div><div class="conversation-text"><div class="ctext-wrap"><i>' + data.from + '</i><p>' + data.message + "</p></div></div></li>").appendTo(".conversation-list");
-
-            s(".conversation-list").scrollTo("100%", "100%", {
-                easing: "swing"
-            });
         }
+        s(".conversation-list").scrollTo("100%", "100%", {
+            easing: "swing"
+        });
     });
     t.prototype.save = function() {
         var t = this.$chatInput.val(),
