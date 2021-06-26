@@ -31,7 +31,7 @@
           color: black;
       }
       .conversation-list{
-          max-height: 300px !important;
+          max-height: 330px !important;
       }
     </style>
   </head>
@@ -95,8 +95,11 @@
                           @endforeach
                         </ul>
                         <div class="row mt-3">
-                          <div class="col-9 chat-inputbar">
-                            <input type="text" class="form-control chat-input" placeholder="Nhập nội dung">
+                          <div class="col-3 chat-inputbar">
+                            <input type="text" class="form-control name-input" id="name-input" placeholder="Nhập tên">
+                          </div>
+                          <div class="col-6 chat-inputbar">
+                            <input type="text" class="form-control chat-input" placeholder="Nhập tin nhắn">
                           </div>
                           <div class="col-3 chat-send">
                             <button type="submit" class="btn btn-info btn-block">Gửi</button>
@@ -401,6 +404,8 @@
         var my_id = '{{ $data->user_id }}';
         var theme = {{ $data->setting->theme }};
         var mtodolist = JSON.parse('<?php echo json_encode($data->todo); ?>');
+
+        var uUUrl = '{{ route("data.user.up") }}';
         var nbAddUrl = '{{ route("nb.add") }}';
         var postDocUrl = '{{ route("data.post.po") }}';
         var upSetUrl = '{{ route("data.set.up") }}';

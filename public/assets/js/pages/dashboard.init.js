@@ -62,7 +62,26 @@ $('#random-number-button').on('click', function() {
         })
     }
 });
-
+$('#name-input').on('change', function() {
+    let name = $(this).val();
+    $.ajax({
+        type: 'POST',
+        url: uUUrl,
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify({
+            'old': my_id,
+            'username': name,
+        }),
+        success: function(data) {
+            if (!data.status)
+                sweetAlert("Oops...", "Tên đã có người lấy, hãy chọn tên khác", "error");
+            else {
+                my_id = name;
+            }
+        }
+    })
+})
 $('.copy-btn').on('click', function() {
 
     let cpy = $('<input>');

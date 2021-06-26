@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
 //Route::get('/craw',[App\Http\Controllers\CrawController::class,'craw']);
+
+Route::post('/user/update', [App\Http\Controllers\IndexController::class, 'UU'])->name('data.user.up');
 Route::post('/setting/update', [App\Http\Controllers\IndexController::class, 'SU'])->name('data.set.up');
 Route::post('/todo/update', [App\Http\Controllers\IndexController::class, 'TDU'])->name('data.todo.up');
 Route::post('/doc/post', [App\Http\Controllers\IndexController::class, 'PDP'])->name('data.post.po');
