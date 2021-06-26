@@ -139,7 +139,7 @@
                             </div>
                             <div class="conversation-text">
                               <div class="ctext-wrap">
-                                <i>{{ $data->user_id }}</i>
+                                <i>{{ $message->from }}</i>
                                 <p>
                                   {{ $message->message }}
                                 </p>
