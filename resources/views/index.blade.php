@@ -33,8 +33,8 @@
       .conversation-list{
           max-height: 330px !important;
       }
-      .conversation-list .odd .conversation-text {
-        text-align: left;
+      .conversation-list .ctext-wrap p {
+          text-align: left;
       }
     </style>
   </head>
