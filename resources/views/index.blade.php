@@ -117,7 +117,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-xl-4">
+              <div class="col-xl-5">
                 <div class="card">
                   <div class="card-header py-3 bg-transparent">
                     <div class="card-widgets">
@@ -207,7 +207,7 @@
                 <!-- end card-->
               </div>
               <!-- end col -->
-              <div class="col-xl-4">
+              <div class="col-xl-3">
                 <div class="card">
                   <div class="card-header py-3 bg-transparent">
                     <div class="card-widgets">
