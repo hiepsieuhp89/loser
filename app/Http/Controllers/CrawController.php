@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-include(app_path() . '\Http\PlugIn\simplehtmldom_1_9_1\simple_html_dom.php');
+include(app_path() . '/Http/PlugIn/simplehtmldom_1_9_1/simple_html_dom.php');
 
 use App\Models\Category;
 use App\Models\Statistic;
