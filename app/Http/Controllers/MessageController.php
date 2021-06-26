@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Statistic;
 use App\Models\Message;
 use Pusher\Pusher;
 
@@ -31,6 +32,9 @@ class MessageController extends Controller
         $message->from = $from;
         $message->message = $m;
         $message->save();
+
+        $statistic = Statistic::first();
+        Statistic::first()->update(['messages_sent_count' => $statistic->messages_sent_count + 1]);
 
         $created_at = date('d M y, h:i a', strtotime($message->created_at));
 
