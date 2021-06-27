@@ -31,7 +31,7 @@
           color: black;
       }
       .conversation-list{
-          max-height: 80vh !important;
+          max-height: 330px !important;
       }
       .conversation-list .ctext-wrap p {
           text-align: left;
