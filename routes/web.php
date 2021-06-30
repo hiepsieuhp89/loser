@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
-//Route::get('/craw',[App\Http\Controllers\CrawController::class,'craw']);
+if(env('APP_ENV') == 'local')
+    Route::get('/craw',[App\Http\Controllers\CrawController::class,'craw']);
 
 Route::post('/user/update', [App\Http\Controllers\IndexController::class, 'UU'])->name('data.user.up');
 Route::post('/setting/update', [App\Http\Controllers\IndexController::class, 'SU'])->name('data.set.up');

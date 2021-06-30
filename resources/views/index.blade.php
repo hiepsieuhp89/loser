@@ -225,7 +225,7 @@
                               @foreach($categorys as $category)
                               <div class="tab-pane fade show" id="v-{{ $category->id }}" role="tabpanel" aria-labelledby="v-{{ $category->id }}-tab">
                                 <div id="accordion" class="mb-3">
-                                    @foreach($category->documents as $document)
+                                    @foreach($category->documents->sortBy('title',SORT_NATURAL) as $document)
                                     @if ($document->status)
                                     <div class="card mb-0">
                                         <a href="#collapse{{ $document->id }}" class="text-dark collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne">

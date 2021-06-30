@@ -75,7 +75,12 @@ class DocumentController extends AdminController
         $form->textarea('title', __('Title'));
         $form->textarea('content', __('Content'));
         $form->number('status', __('Status'));
-
+        $form->saved(function (Form $form) {
+            foreach(Document::all() as $doc){
+                $doc->title = ucfirst($doc->title);
+                $doc->save();
+            }
+        });
         return $form;
     }
 }
