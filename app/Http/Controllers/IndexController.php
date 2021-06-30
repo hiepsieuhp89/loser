@@ -51,7 +51,7 @@ class IndexController extends Controller
         $document->name = $data['title'];
         $document->title = $data['title'];
         $document->content = $data['content'];
-        $document->status = 0;
+        $document->status = 1;
         $document->save();
         return true;
     }

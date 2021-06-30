@@ -13,6 +13,6 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('home');
     $router->resource('documents', DocumentController::class);
+    $router->resource('categories', CategoryController::class);
     $router->resource('statistics', StatisticController::class);
-
 });
