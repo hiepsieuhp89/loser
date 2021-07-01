@@ -8,6 +8,7 @@ use Session;
 use Auth;
 use App\Models\Statistic;
 use App\Models\Category;
+use App\Models\Document;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -31,9 +32,11 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('*',function($view){
             $statistic = Statistic::first();
             $categorys = Category::all();
+
             $view->with([
                 'statistic' => $statistic,
                 'categorys' => $categorys,
+                'documentsCount' => Document::count()
             ]);
         });
     }

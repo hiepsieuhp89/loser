@@ -781,7 +781,7 @@
                                     <div class="card-body widget-style-2">
                                         <div class="text-white media">
                                             <div class="media-body align-self-center">
-                                                <h2 class="my-0 text-white"><span data-plugin="counterup">{{ $statistic->docs_count }}</span></h2>
+                                                <h2 class="my-0 text-white"><span data-plugin="counterup">{{ $documentsCount }}</span></h2>
                                                 <p class="mb-0">Số lượng văn mẫu</p>
                                             </div>
                                             <i class="ion-ios-pricetag"></i>
