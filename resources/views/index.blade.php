@@ -322,7 +322,7 @@
                         </div>
                         <!-- End row -->
                         <div class="row image-crop">
-                            <div class="col-12">
+                            <div class="col-9">
                                 <div class="card">
                                     <div class="card-header py-3 bg-transparent">
                                         <h5 class="header-title mb-0">Cắt ảnh</h5>
@@ -411,9 +411,331 @@
                                 <!-- end card-->
                             </div>
                             <!-- end col-->
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div style="text-align: end;" class="col-lg-12 img-crop-preview-btns docs-buttons">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="setDragMode" data-option="move" title="Move">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="">
+                                                    <span class="mdi mdi-cursor-move"></span>
+                                                    </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success" data-method="setDragMode" data-option="crop" title="Crop">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="">
+                                                    <span class="mdi mdi-crop"></span>
+                                                    </span>
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success" data-method="zoom" data-option="0.1" title="Zoom In">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Zoom In">
+                                                    <span class="mdi mdi-magnify-plus-outline"></span>
+                                                    </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success" data-method="zoom" data-option="-0.1" title="Zoom Out">
+                                                    <span class="mdi mdi-magnify-minus-outline" data-toggle="tooltip" data-animation="false" title="Zoom Out">
+                                                    </span>
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="move" data-option="-10" data-second-option="0" title="Move Left">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Dịch trái">
+                                                    <span class="mdi mdi-arrow-left"></span>
+                                                    </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="move" data-option="10" data-second-option="0" title="Move Right">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Dịch phải">
+                                                    <span class="mdi mdi-arrow-right"></span>
+                                                    </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="move" data-option="0" data-second-option="-10" title="Move Up">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Dịch lên">
+                                                    <span class="mdi mdi-arrow-up"></span>
+                                                    </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="move" data-option="0" data-second-option="10" title="Move Down">
+                                                    <span class="mdi mdi-arrow-down" data-toggle="tooltip" data-animation="false" title="Dịch xuống">
+                                                    </span>
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="rotate" data-option="-45" title="Rotate Left">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Xoay trái">
+                                                        Xoay trái
+                                                    <span class="mdi mdi-rotate-left"></span>
+                                                    </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="rotate" data-option="45" title="Rotate Right">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Xoay phải">
+                                                        Xoay phải
+                                                    <span class="mdi mdi-rotate-right"></span>
+                                                    </span>
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="scaleX" data-option="-1" title="Lật ngang">
+                                                        <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Lật ngang">
+                                                            Lật ngang
+                                                            <span class="mdi mdi-arrow-left-right"></span>
+                                                        </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="scaleY" data-option="-1" title="Lật dọc">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Lật dọc">
+                                                        Lật dọc
+                                                    <span class="mdi mdi-arrow-up-down"></span>
+                                                    </span>
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="reset" title="Reset">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Reset">
+                                                    Reset
+                                                    <span class="mdi mdi-sync"></span>
+                                                    </span>
+                                                    </button>
+                                                    <label class="btn btn-success mb-0 btn-upload btn-sm" for="inputImage" title="Upload image file">
+                                                    <input type="file" class="sr-only" id="inputImage" name="file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Tải ảnh lên">
+                                                    Upload
+                                                    <span class="mdi mdi-upload">
+                                                    </span>
+                                                    </span>
+                                                    </label>
+                                                </div>
+                                                <br>
+                                                <div class="btn-group btn-group-crop">
+                                                    <button type="button" class="btn btn-primary btn-lg" data-method="getCroppedCanvas" data-option="{ &quot;maxWidth&quot;: 4096, &quot;maxHeight&quot;: 4096 }">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Cắt">Cắt
+                                                    </span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal fade docs-cropped" id="getCroppedCanvasModal" aria-hidden="true" aria-labelledby="getCroppedCanvasTitle" role="dialog" tabindex="-1">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="getCroppedCanvasTitle">Ảnh đã cắt</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body text-center"></div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
+                                                                <a class="btn btn-outline-info" id="download" href="javascript:void(0);" download="cropped.jpg">Tải xuống</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end col -->
+                                            <div class="col-lg-12 docs-toggles">
+                                                <div class="btn-group btn-group-sm d-flex flex-nowrap" data-toggle="buttons">
+                                                    <label class="btn btn-outline-success active">
+                                                    <input type="radio" class="sr-only" id="aspectRatio0" name="aspectRatio" value="1.7777777777777777">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="aspectRatio: 16 / 9">
+                                                    16:9
+                                                    </span>
+                                                    </label>
+                                                    <label class="btn btn-outline-success">
+                                                    <input type="radio" class="sr-only" id="aspectRatio1" name="aspectRatio" value="1.3333333333333333">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="aspectRatio: 4 / 3">
+                                                    4:3
+                                                    </span>
+                                                    </label>
+                                                    <label class="btn btn-outline-success">
+                                                    <input type="radio" class="sr-only" id="aspectRatio2" name="aspectRatio" value="1">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="aspectRatio: 1 / 1">
+                                                    1:1
+                                                    </span>
+                                                    </label>
+                                                    <label class="btn btn-outline-success">
+                                                    <input type="radio" class="sr-only" id="aspectRatio3" name="aspectRatio" value="0.6666666666666666">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="aspectRatio: 2 / 3">
+                                                    2:3
+                                                    </span>
+                                                    </label>
+                                                    <label class="btn btn-outline-success">
+                                                    <input type="radio" class="sr-only" id="aspectRatio4" name="aspectRatio" value="NaN">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="aspectRatio: NaN">
+                                                    Free
+                                                    </span>
+                                                    </label>
+                                                </div>
+                                                <div class="dropdown dropup docs-options">
+                                                    <button type="button" class="btn btn-success btn-block dropdown-toggle" id="toggleOptions" data-toggle="dropdown" aria-expanded="true">
+                                                    Options <i class="mdi mdi-chevron-up"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu docs-drop-options" aria-labelledby="toggleOptions" role="menu">
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox0" type="checkbox" name="responsive" checked="">
+                                                                <label for="checkbox0">
+                                                                Responsive
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox1" type="checkbox" name="restore" checked="">
+                                                                <label for="checkbox1">
+                                                                Restore
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox2" type="checkbox" name="checkCrossOrigin" checked="">
+                                                                <label for="checkbox2">
+                                                                CheckCrossOrigin
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox3" type="checkbox" name="checkOrientation" checked="">
+                                                                <label for="checkbox3">
+                                                                CheckOrientation
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox4" type="checkbox" name="modal" checked="">
+                                                                <label for="checkbox4">
+                                                                Modal
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox5" type="checkbox" name="guides" checked="">
+                                                                <label for="checkbox5">
+                                                                Guides
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox6" type="checkbox" name="center" checked="">
+                                                                <label for="checkbox6">
+                                                                Center
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox7" type="checkbox" name="highlight" checked="">
+                                                                <label for="checkbox7">
+                                                                Highlight
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox8" type="checkbox" name="background" checked="">
+                                                                <label for="checkbox8">
+                                                                Background
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox9" type="checkbox" name="autoCrop" checked="">
+                                                                <label for="checkbox9">
+                                                                AutoCrop
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox10" type="checkbox" name="movable" checked="">
+                                                                <label for="checkbox10">
+                                                                Movable
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox11" type="checkbox" name="rotatable" checked="">
+                                                                <label for="checkbox11">
+                                                                Rotatable
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox12" type="checkbox" name="scalable" checked="">
+                                                                <label for="checkbox12">
+                                                                Scalable
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox13" type="checkbox" name="zoomable" checked="">
+                                                                <label for="checkbox13">
+                                                                Zoomable
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox14" type="checkbox" name="zoomOnTouch" checked="">
+                                                                <label for="checkbox14">
+                                                                ZoomOnTouch
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox15" type="checkbox" name="zoomOnWheel" checked="">
+                                                                <label for="checkbox15">
+                                                                ZoomOnWheel
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox16" type="checkbox" name="cropBoxMovable" checked="">
+                                                                <label for="checkbox16">
+                                                                CropBoxMovable
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox17" type="checkbox" name="cropBoxResizable" checked="">
+                                                                <label for="checkbox17">
+                                                                CropBoxResizable
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox18" type="checkbox" name="toggleDragModeOnDblclick" checked="">
+                                                                <label for="checkbox18">
+                                                                ToggleDragModeOnDblclick
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- end .docs-options -->
+                                            </div>
+                                            <!-- end col -->
+                                        </div>
+                                        <!--end row-->
+                                    </div>
+                                    <!-- end card-body -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col -->
                         </div>
                         <!--end row-->
-                        <div class="row image-crop-actions">
+                        {{-- <div class="row image-crop-actions">
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
@@ -736,7 +1058,7 @@
                                 <!-- end card -->
                             </div>
                             <!-- end col -->
-                        </div>
+                        </div> --}}
                         <!--end row-->
                         <div class="row">
                             <div class="col-xl-3 col-sm-6">
