@@ -94,6 +94,18 @@ $('.copy-btn').on('click', function() {
 
     cpy.remove();
 })
+$('#document-search').on('keyup', function() {
 
+    !$('#vanmau-section .category-link#v-all-tab').hasClass('active') ?
+        $('#vanmau-section .category-link#v-all-tab').click() : '';
+
+    let key = $(this).val().replace(/ /g, '').toLowerCase();
+    $('.tab-pane#v-all #accordion-all .card').css('display', 'none').filter(function(id, ele) {
+
+        return $(ele).find('.card-header h6').html().replace(/ /g, '').toLowerCase().includes(key) || $(ele).find('.card-body.document-content').html().replace(/ /g, '').toLowerCase().includes(key);
+
+    }).css('display', 'block');
+})
+$('.document-title').css('padding', '.7rem 1rem');
 $('.category-link:first-child').addClass('active');
 $('div[role="tabpanel"]:first-child').addClass('active');

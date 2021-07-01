@@ -207,10 +207,13 @@
                     </div>
                     <h5 class="header-title mb-0">Văn mẫu phản biện</h5>
                   </div>
-                  <div id="cardCollpase1" class="collapse show">
+                  <div id="cardCollpase1" class="collapse show" style="font-size: .8rem;">
                     <div class="card-box">
                       <div class="tabs-vertical-env">
                         <div class="row">
+                          <div class="form-group col-sm-12">
+                            <input class="form-control" type="text" id="document-search" required placeholder="Nhập từ khóa tìm kiếm">
+                          </div>
                           <div class="col-md-3">
                             <div class="nav flex-column nav-pills tabs-vertical" role="tablist" aria-orientation="vertical">
                               @foreach($categorys as $category)
@@ -218,25 +221,26 @@
                               {{ $category->name }}
                               </a>
                               @endforeach
+                              <a class="nav-link category-link mb-2" id="v-all-tab" data-toggle="pill" href="#v-all" role="tab" aria-controls="v-all" aria-selected="true">Tất cả</a>
                             </div>
                           </div>
                           <div class="col-md-9">
                             <div class="tab-content pt-4 pt-md-0">
                               @foreach($categorys as $category)
                               <div class="tab-pane fade show" id="v-{{ $category->id }}" role="tabpanel" aria-labelledby="v-{{ $category->id }}-tab">
-                                <div id="accordion" class="mb-3">
+                                <div id="accordion-{{ $category->id }}" class="mb-3">
                                     @foreach($category->documents->sortBy('title',SORT_NATURAL) as $document)
                                     @if ($document->status)
                                     <div class="card mb-0">
                                         <a href="#collapse{{ $document->id }}" class="text-dark collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne">
-                                            <div class="card-header" id="heading{{ $document->id }}">
+                                            <div class="card-header document-title" id="heading{{ $document->id }}">
                                                 <h6 class="m-0">
                                                     {{ $document->title }}
                                                 </h6>
                                             </div>
                                         </a>
 
-                                        <div id="collapse{{ $document->id }}" class="collapse" aria-labelledby="heading{{ $document->id }}" data-parent="#accordion" style="">
+                                        <div id="collapse{{ $document->id }}" class="collapse" aria-labelledby="heading{{ $document->id }}" data-parent="#accordion-{{ $category->id }}" style="">
                                             <div class="card-body text-dark" id="content{{ $document->id }}">
                                                 {{ $document->content }}
                                             </div>
@@ -248,6 +252,32 @@
                                 </div>
                               </div>
                               @endforeach
+                              <div class="tab-pane fade show" id="v-all" role="tabpanel" aria-labelledby="v-all-tab">
+                                <div id="accordion-all" class="mb-3">
+                                    @foreach($categorys as $category)
+                                        @foreach($category->documents->sortBy('title',SORT_NATURAL) as $document)
+                                        @if ($document->status)
+                                        <div class="card mb-0">
+                                            <a href="#collapse{{ $document->id }}" class="text-dark collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne">
+                                                <div class="card-header document-title" id="heading{{ $document->id }}">
+                                                    <h6 class="m-0">
+                                                        {{ $document->title }}
+                                                    </h6>
+                                                </div>
+                                            </a>
+
+                                            <div id="collapse{{ $document->id }}" class="collapse" aria-labelledby="heading{{ $document->id }}" data-parent="#accordion-all" style="">
+                                                <div class="card-body text-dark document-content" id="content{{ $document->id }}">
+                                                    {{ $document->content }}
+                                                </div>
+                                                <button style="width: 100px; margin:auto;" class="btn-info btn-block btn mb-4 copy-btn" type="button" target="#content{{ $document->id }}">Copy</button>
+                                            </div>
+                                        </div>
+                                        @endif
+                                        @endforeach
+                                    @endforeach
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
