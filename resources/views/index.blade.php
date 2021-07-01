@@ -692,7 +692,9 @@
                                                                         <span class="mdi mdi-sync"></span>
                                                                         </span>
                                                                         </button>
-                                                                        <label class="btn btn-success mb-0 btn-upload btn-sm" for="inputImage" title="Upload image file">
+                                                                    </div>
+                                                                    <div class="btn-group w-100">
+                                                                        <label class="btn btn-danger mb-0 btn-upload btn-lg" for="inputImage" title="Upload image file">
                                                                         <input type="file" class="sr-only" id="inputImage" name="file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
                                                                         <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Tải ảnh lên">
                                                                         Upload
@@ -701,6 +703,7 @@
                                                                         </span>
                                                                         </label>
                                                                     </div>
+                                                                    <br>
                                                                     <br>
                                                                     <div class="btn-group btn-group-crop w-100">
                                                                         <button type="button" class="btn btn-primary btn-lg w-100" data-method="getCroppedCanvas" data-option="{ &quot;maxWidth&quot;: 4096, &quot;maxHeight&quot;: 4096 }">
