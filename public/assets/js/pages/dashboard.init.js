@@ -101,7 +101,6 @@ $('#document-search').on('keyup', function() {
 
     let key = formatText($(this).val());
     $('.tab-pane#v-all #accordion-all .card').css('display', 'none').filter(function(id, ele) {
-
         return formatText($(ele).find('.card-header h6').html()).includes(key) || formatText($(ele).find('.card-body.document-content').html()).includes(key);
 
     }).css('display', 'block');
