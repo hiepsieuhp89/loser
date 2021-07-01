@@ -415,122 +415,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row">
-                                            <div style="text-align: end;" class="col-lg-12 img-crop-preview-btns docs-buttons">
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-success btn-sm" data-method="setDragMode" data-option="move" title="Move">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="">
-                                                    <span class="mdi mdi-cursor-move"></span>
-                                                    </span>
-                                                    </button>
-                                                    <button type="button" class="btn btn-success" data-method="setDragMode" data-option="crop" title="Crop">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="">
-                                                    <span class="mdi mdi-crop"></span>
-                                                    </span>
-                                                    </button>
-                                                </div>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-success" data-method="zoom" data-option="0.1" title="Zoom In">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Zoom In">
-                                                    <span class="mdi mdi-magnify-plus-outline"></span>
-                                                    </span>
-                                                    </button>
-                                                    <button type="button" class="btn btn-success" data-method="zoom" data-option="-0.1" title="Zoom Out">
-                                                    <span class="mdi mdi-magnify-minus-outline" data-toggle="tooltip" data-animation="false" title="Zoom Out">
-                                                    </span>
-                                                    </button>
-                                                </div>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-success btn-sm" data-method="move" data-option="-10" data-second-option="0" title="Move Left">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Dịch trái">
-                                                    <span class="mdi mdi-arrow-left"></span>
-                                                    </span>
-                                                    </button>
-                                                    <button type="button" class="btn btn-success btn-sm" data-method="move" data-option="10" data-second-option="0" title="Move Right">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Dịch phải">
-                                                    <span class="mdi mdi-arrow-right"></span>
-                                                    </span>
-                                                    </button>
-                                                    <button type="button" class="btn btn-success btn-sm" data-method="move" data-option="0" data-second-option="-10" title="Move Up">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Dịch lên">
-                                                    <span class="mdi mdi-arrow-up"></span>
-                                                    </span>
-                                                    </button>
-                                                    <button type="button" class="btn btn-success btn-sm" data-method="move" data-option="0" data-second-option="10" title="Move Down">
-                                                    <span class="mdi mdi-arrow-down" data-toggle="tooltip" data-animation="false" title="Dịch xuống">
-                                                    </span>
-                                                    </button>
-                                                </div>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-success btn-sm" data-method="rotate" data-option="-45" title="Rotate Left">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Xoay trái">
-                                                        Xoay trái
-                                                    <span class="mdi mdi-rotate-left"></span>
-                                                    </span>
-                                                    </button>
-                                                    <button type="button" class="btn btn-success btn-sm" data-method="rotate" data-option="45" title="Rotate Right">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Xoay phải">
-                                                        Xoay phải
-                                                    <span class="mdi mdi-rotate-right"></span>
-                                                    </span>
-                                                    </button>
-                                                </div>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-success btn-sm" data-method="scaleX" data-option="-1" title="Lật ngang">
-                                                        <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Lật ngang">
-                                                            Lật ngang
-                                                            <span class="mdi mdi-arrow-left-right"></span>
-                                                        </span>
-                                                    </button>
-                                                    <button type="button" class="btn btn-success btn-sm" data-method="scaleY" data-option="-1" title="Lật dọc">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Lật dọc">
-                                                        Lật dọc
-                                                    <span class="mdi mdi-arrow-up-down"></span>
-                                                    </span>
-                                                    </button>
-                                                </div>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-success btn-sm" data-method="reset" title="Reset">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Reset">
-                                                    Reset
-                                                    <span class="mdi mdi-sync"></span>
-                                                    </span>
-                                                    </button>
-                                                    <label class="btn btn-success mb-0 btn-upload btn-sm" for="inputImage" title="Upload image file">
-                                                    <input type="file" class="sr-only" id="inputImage" name="file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Tải ảnh lên">
-                                                    Upload
-                                                    <span class="mdi mdi-upload">
-                                                    </span>
-                                                    </span>
-                                                    </label>
-                                                </div>
-                                                <br>
-                                                <div class="btn-group btn-group-crop">
-                                                    <button type="button" class="btn btn-primary btn-lg" data-method="getCroppedCanvas" data-option="{ &quot;maxWidth&quot;: 4096, &quot;maxHeight&quot;: 4096 }">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Cắt">Cắt
-                                                    </span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal fade docs-cropped" id="getCroppedCanvasModal" aria-hidden="true" aria-labelledby="getCroppedCanvasTitle" role="dialog" tabindex="-1">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="getCroppedCanvasTitle">Ảnh đã cắt</h5>
-                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="modal-body text-center"></div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
-                                                                <a class="btn btn-outline-info" id="download" href="javascript:void(0);" download="cropped.jpg">Tải xuống</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- end col -->
-                                            <div class="col-lg-12 docs-toggles">
+                                            <div class="col-lg-12 docs-toggles mb-3">
                                                 <div class="btn-group btn-group-sm d-flex flex-nowrap" data-toggle="buttons">
                                                     <label class="btn btn-outline-success active">
                                                     <input type="radio" class="sr-only" id="aspectRatio0" name="aspectRatio" value="1.7777777777777777">
@@ -723,6 +608,121 @@
                                                     </ul>
                                                 </div>
                                                 <!-- end .docs-options -->
+                                            </div>
+                                            <!-- end col -->
+                                            <div style="text-align: end;" class="col-lg-12 img-crop-preview-btns docs-buttons">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="setDragMode" data-option="move" title="Move">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="">
+                                                    <span class="mdi mdi-cursor-move"></span>
+                                                    </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success" data-method="setDragMode" data-option="crop" title="Crop">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="">
+                                                    <span class="mdi mdi-crop"></span>
+                                                    </span>
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success" data-method="zoom" data-option="0.1" title="Zoom In">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Zoom In">
+                                                    <span class="mdi mdi-magnify-plus-outline"></span>
+                                                    </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success" data-method="zoom" data-option="-0.1" title="Zoom Out">
+                                                    <span class="mdi mdi-magnify-minus-outline" data-toggle="tooltip" data-animation="false" title="Zoom Out">
+                                                    </span>
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="move" data-option="-10" data-second-option="0" title="Move Left">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Dịch trái">
+                                                    <span class="mdi mdi-arrow-left"></span>
+                                                    </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="move" data-option="10" data-second-option="0" title="Move Right">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Dịch phải">
+                                                    <span class="mdi mdi-arrow-right"></span>
+                                                    </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="move" data-option="0" data-second-option="-10" title="Move Up">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Dịch lên">
+                                                    <span class="mdi mdi-arrow-up"></span>
+                                                    </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="move" data-option="0" data-second-option="10" title="Move Down">
+                                                    <span class="mdi mdi-arrow-down" data-toggle="tooltip" data-animation="false" title="Dịch xuống">
+                                                    </span>
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="rotate" data-option="-45" title="Rotate Left">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Xoay trái">
+                                                        Xoay trái
+                                                    <span class="mdi mdi-rotate-left"></span>
+                                                    </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="rotate" data-option="45" title="Rotate Right">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Xoay phải">
+                                                        Xoay phải
+                                                    <span class="mdi mdi-rotate-right"></span>
+                                                    </span>
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="scaleX" data-option="-1" title="Lật ngang">
+                                                        <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Lật ngang">
+                                                            Lật ngang
+                                                            <span class="mdi mdi-arrow-left-right"></span>
+                                                        </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="scaleY" data-option="-1" title="Lật dọc">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Lật dọc">
+                                                        Lật dọc
+                                                    <span class="mdi mdi-arrow-up-down"></span>
+                                                    </span>
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success btn-sm" data-method="reset" title="Reset">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Reset">
+                                                    Reset
+                                                    <span class="mdi mdi-sync"></span>
+                                                    </span>
+                                                    </button>
+                                                    <label class="btn btn-success mb-0 btn-upload btn-sm" for="inputImage" title="Upload image file">
+                                                    <input type="file" class="sr-only" id="inputImage" name="file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Tải ảnh lên">
+                                                    Upload
+                                                    <span class="mdi mdi-upload">
+                                                    </span>
+                                                    </span>
+                                                    </label>
+                                                </div>
+                                                <br>
+                                                <div class="btn-group btn-group-crop w-100">
+                                                    <button type="button" class="btn btn-primary btn-lg w-100" data-method="getCroppedCanvas" data-option="{ &quot;maxWidth&quot;: 4096, &quot;maxHeight&quot;: 4096 }">
+                                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Cắt">Cắt
+                                                    </span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal fade docs-cropped" id="getCroppedCanvasModal" aria-hidden="true" aria-labelledby="getCroppedCanvasTitle" role="dialog" tabindex="-1">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="getCroppedCanvasTitle">Ảnh đã cắt</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body text-center"></div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
+                                                                <a class="btn btn-outline-info" id="download" href="javascript:void(0);" download="cropped.jpg">Tải xuống</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <!-- end col -->
                                         </div>
