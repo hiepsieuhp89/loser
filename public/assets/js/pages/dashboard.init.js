@@ -24,10 +24,11 @@ $(document).on('change', "#dark-mode-switch, #light-mode-switch", function() {
     })
 })
 $('#document-post').on('click', function() {
+    let k = $('#document-category').val();
     let t = $('#document-title').val();
     let c = $('#document-content').val();
-    if (!t || !c || t.trim() == '' || c.trim() == '')
-        sweetAlert("Không đủ thông tin", "error");
+    if (!t || !c || !k || t.trim() == '' || c.trim() == '' || k.trim() == '')
+        sweetAlert("Error", "Không đủ thông tin");
     else
         $.ajax({
             type: 'POST',
@@ -35,6 +36,7 @@ $('#document-post').on('click', function() {
             dataType: 'json',
             contentType: 'application/json',
             data: JSON.stringify({
+                'category': k,
                 'title': t,
                 'content': c
             }),

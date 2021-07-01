@@ -47,7 +47,7 @@ class IndexController extends Controller
     public function PDP(Request $req){
         $data = $req->all();
         $document = new Document();
-        $document->category_id = 9999;
+        $document->category_id = $data['category'];
         $document->name = $data['title'];
         $document->title = $data['title'];
         $document->content = $data['content'];

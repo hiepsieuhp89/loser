@@ -74,7 +74,6 @@
                                         <div class="card-widgets">
                                             <a href="javascript:;" data-toggle="reload"><i class="mdi mdi-refresh"></i></a>
                                             <a data-toggle="collapse" href="#cardCollpase3" role="button" aria-expanded="false" aria-controls="cardCollpase3"><i class="mdi mdi-minus"></i></a>
-                                            <a href="#" data-toggle="remove"><i class="mdi mdi-close"></i></a>
                                         </div>
                                         <h5 class="header-title mb-0">Chat</h5>
                                     </div>
@@ -123,7 +122,6 @@
                                         <div class="card-widgets">
                                             <a href="javascript:;" data-toggle="reload"><i class="mdi mdi-refresh"></i></a>
                                             <a data-toggle="collapse" href="#cardCollpase4" role="button" aria-expanded="false" aria-controls="cardCollpase4"><i class="mdi mdi-minus"></i></a>
-                                            <a href="#" data-toggle="remove"><i class="mdi mdi-close"></i></a>
                                         </div>
                                         <h5 class="header-title mb-0"> Todo</h5>
                                     </div>
@@ -200,12 +198,11 @@
                         <!-- End row -->
                         <div class="row">
                             {{-- Start Van mau section --}}
-                            <div class="col-xl-8" id="vanmau-section">
+                            <div class="col-xl-9" id="vanmau-section">
                                 <div class="card">
                                     <div class="card-header py-3 bg-transparent">
                                         <div class="card-widgets">
                                             <a data-toggle="collapse" href="#cardCollpase1" role="button" aria-expanded="false" aria-controls="cardCollpase1"><i class="mdi mdi-minus"></i></a>
-                                            <a href="#" data-toggle="remove"><i class="mdi mdi-close"></i></a>
                                         </div>
                                         <h5 class="header-title mb-0">Văn mẫu phản biện</h5>
                                     </div>
@@ -287,7 +284,7 @@
                                 </div>
                                 <!-- end card-->
                             </div>
-                            <div class="col-xl-4">
+                            <div class="col-xl-3">
                                 <div class="card">
                                     <div class="card-header py-3 bg-transparent">
                                         <div class="card-widgets">
@@ -298,8 +295,18 @@
                                     <div id="cardCollpase6" class="collapse show">
                                         <div class="card-body">
                                             <div class="row">
-                                                <label for="document-title" class="col-sm-2 col-form-label">Tiêu đề</label>
-                                                <div class="form-group mb-3 col-sm-10">
+                                                <label for="document-category" class="col-sm-12 col-form-label">Danh mục</label>
+                                                <div class="form-group mb-3 col-sm-12">
+                                                    <select class="form-control" id="document-category" required>
+                                                        @foreach($categorys as $category)
+                                                        <option value="{{ $category->id }}">
+                                                            {{ $category->name }}
+                                                        </option>
+                                                        @endforeach
+                                                    </select>
+                                                </div>
+                                                <label for="document-title" class="col-sm-12 col-form-label">Tiêu đề</label>
+                                                <div class="form-group mb-3 col-sm-12">
                                                     <input class="form-control" type="text" id="document-title" required placeholder="Nhập tiêu đề">
                                                 </div>
                                                 <div class="form-group mb-3 col-sm-12">
@@ -326,7 +333,6 @@
                                     <div class="card-header py-3 bg-transparent">
                                         <div class="card-widgets">
                                             <a data-toggle="collapse" href="#cardCollpase-image-crop" role="button" aria-expanded="false" aria-controls="cardCollpase-image-crop"><i class="mdi mdi-minus"></i></a>
-                                            <a href="#" data-toggle="remove"><i class="mdi mdi-close"></i></a>
                                         </div>
                                         <h5 class="header-title mb-0">Cắt ảnh</h5>
                                     </div>
