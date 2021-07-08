@@ -22,7 +22,7 @@ const CountDown = (props) => {
                 <div
                     className="count-down"
                     style={{
-                        background: `linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(${props.background})`,
+                        background: `linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 70%)),url(${props.background})`,
                     }}
                 >
                     <div className="count-down__title">{props.name}</div>
