@@ -990,6 +990,27 @@
                     </div>
                     <!--end row-->
                     <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-header py-3 bg-transparent">
+                                    <div class="card-widgets">
+                                        <a href="javascript:;" data-toggle="reload"><i class="mdi mdi-refresh"></i></a>
+                                        <a data-toggle="collapse" href="#cardCollpaseYoutube" role="button"
+                                            aria-expanded="false" aria-controls="cardCollpaseYoutube"><i
+                                                class="mdi mdi-minus"></i></a>
+                                    </div>
+                                    <h5 class="header-title mb-0"> Nhạc</h5>
+                                </div>
+                                <div id="cardCollpaseYoutube" class="collapse show">
+                                    <div class="card-body">
+                                        <iframe width="100%" height = "400px" src="https://www.youtube.com/embed/videoseries?list=PLuV7shxQ6n45fF8CevxZvMoZ4-4Bc-vFT&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end row-->
+                    <div class="row">
                         <div class="col-xl-3 col-sm-6">
                             <div class="card bg-pink">
                                 <div class="card-body widget-style-2">
