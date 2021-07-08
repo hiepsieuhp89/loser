@@ -15,4 +15,5 @@ Route::group([
     $router->resource('documents', DocumentController::class);
     $router->resource('categories', CategoryController::class);
     $router->resource('statistics', StatisticController::class);
+    $router->resource('count-downs', CountDownController::class);
 });

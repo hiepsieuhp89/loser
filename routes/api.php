@@ -17,4 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('/countdown/all', [App\Http\Controllers\Api\CountDownController::class, 'index'])->name('data.countdown.all');
+
 Route::middleware('guest')->get('/1/add', [App\Http\Controllers\IndexController::class, 'RNGC'])->name('nb.add');
