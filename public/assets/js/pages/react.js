@@ -17,7 +17,7 @@ const CountDown = (props) => {
     return (
         <div className="col-xl-4">
             <div className="page-title-box">
-                <div className="count-down" style={{backgroundImage : `url(${props.background})`}}>
+                <div className="count-down" style={{backgroundImage : `gradient( rgb(0 0 0 / 0%), rgba(0, 0, 0, 0.7) ),url(${props.background})`}}>
                     <div className="count-down__title">{props.name}</div>
                     <div className="count-down__endTime">{formatTime(props.time)}</div>
                     <div endtime={props.time} className="count-down__time">
