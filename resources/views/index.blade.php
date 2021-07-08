@@ -58,6 +58,7 @@
         }
 
         .count-down__title , .count-down__time, .count-down__endTime{
+            font-weight: bold;
             color: #ffffff;
             text-shadow: text-shadow: 0 0 10px black;
             text-align: center;
