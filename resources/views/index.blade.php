@@ -369,7 +369,7 @@
                                                                                     aria-labelledby="heading{{ $document->id }}"
                                                                                     data-parent="#accordion-all"
                                                                                     style="">
-                                                                                    <div class="card-body text-dark document-content"
+                                                                                    <div style="white-space: pre-line;" class="card-body text-dark document-content"
                                                                                         id="content{{ $document->id }}">
                                                                                         {{ $document->content }}
                                                                                     </div>
