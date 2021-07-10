@@ -329,7 +329,7 @@
                                                                                     aria-labelledby="heading{{ $document->id }}"
                                                                                     data-parent="#accordion-{{ $category->id }}"
                                                                                     style="">
-                                                                                    <div class="card-body text-dark"
+                                                                                    <div style="white-space: pre-line;" class="card-body text-dark"
                                                                                         id="content{{ $document->id }}">
                                                                                         {{ $document->content }}
                                                                                     </div>
@@ -367,8 +367,7 @@
                                                                                 <div id="collapse{{ $document->id }}"
                                                                                     class="collapse"
                                                                                     aria-labelledby="heading{{ $document->id }}"
-                                                                                    data-parent="#accordion-all"
-                                                                                    style="">
+                                                                                    data-parent="#accordion-all" >
                                                                                     <div style="white-space: pre-line;" class="card-body text-dark document-content"
                                                                                         id="content{{ $document->id }}">
                                                                                         {{ $document->content }}
